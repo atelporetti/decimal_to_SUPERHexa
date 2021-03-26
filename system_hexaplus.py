@@ -32,12 +32,12 @@ def deco_to_hexaplus(string_num):
                 i = i + 1
             num = int(num / 32)
 
-        # printing hexadecimal number array in reverse order
 
         concat = ''
         converted_num = ''
         j = i - 1
-
+        
+        # printing hexadecimal number array in reverse order
         while(j >= 0):
             converted_num += concat.join(hexaplus_num[j])
             j = j - 1
@@ -45,6 +45,7 @@ def deco_to_hexaplus(string_num):
         final_hexaplus += concat.join(converted_num)
         if not original_num == num_list[-1]:
             final_hexaplus += ','
+            
     return print(final_hexaplus)
 
 
